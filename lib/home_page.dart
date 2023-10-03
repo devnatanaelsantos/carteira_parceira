@@ -9,14 +9,16 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  //Variáveis para configuração o botão de visibilidade de senha
+  bool obscureText = true;
+  IconData? iconPassword = Icons.visibility;
+
   @override
   Widget build(BuildContext context) {
     //display Width
     double screenWidth = MediaQuery.of(context).size.width;
     //display Height
     double screenHeight = MediaQuery.of(context).size.height;
-    //containerMain Heigth
-    //double containerMainHeight = screenHeight * 0.436;
 
     return Scaffold(
       backgroundColor: AppColors.primarycolor,
@@ -35,13 +37,15 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             SizedBox(height: screenHeight * 0.19),
+            //text box e-mail
             SizedBox(
               height: screenHeight * 0.06,
               width: screenWidth - 48,
               child: TextField(
+                keyboardType: TextInputType.emailAddress,
                 decoration: InputDecoration(
                   filled: true,
-                  fillColor: const Color.fromARGB(255, 255, 255, 255),
+                  fillColor: Colors.white,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(24),
                     borderSide: BorderSide.none,
@@ -54,13 +58,14 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             SizedBox(height: screenHeight * 0.01),
+            //text box senha
             SizedBox(
               height: screenHeight * 0.06,
               width: screenWidth - 48,
               child: TextField(
                 decoration: InputDecoration(
                   filled: true,
-                  fillColor: const Color.fromARGB(255, 255, 255, 255),
+                  fillColor: Colors.white,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(24),
                     borderSide: BorderSide.none,
@@ -68,12 +73,31 @@ class _HomePageState extends State<HomePage> {
                   hintText: "Senha",
                   hintStyle:
                       const TextStyle(color: Color(0xFF989898), fontSize: 14),
+                  //configurando botão de visibilidade de senha
+                  suffixIcon: IconButton(
+                    onPressed: () {
+                      if (obscureText == true) {
+                        setState(() {
+                          obscureText = false;
+                          iconPassword = Icons.visibility_off;
+                        });
+                      } else {
+                        setState(() {
+                          obscureText = true;
+                          iconPassword = Icons.visibility;
+                        });
+                      }
+                    },
+                    icon: Icon(iconPassword),
+                    color: AppColors.secundarycolor,
+                  ),
                 ),
-                obscureText: true,
+                obscureText: obscureText,
                 textAlign: TextAlign.left,
               ),
             ),
             SizedBox(height: screenHeight * 0.03),
+            //button entrar
             SizedBox(
               height: screenHeight * 0.06,
               width: screenWidth - 144,
@@ -93,6 +117,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             SizedBox(height: screenHeight * 0.01),
+            //button cadastrar-se
             SizedBox(
               height: screenHeight * 0.06,
               width: screenWidth - 144,
@@ -112,6 +137,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             SizedBox(height: screenHeight * 0.02),
+            //button esqueceu a senha
             SizedBox(
               width: 150,
               height: 60,
