@@ -14,7 +14,7 @@ Atualmente, criei a primeira versão do layout da tela de login. Ainda não est�
 ### Gerencimento de estado utilizado:
 - setState
 
-### layout
+### Layout
 <img src="https://github.com/devnatanaelsantos/assets/blob/main/login1.png" width=300 height='650'>
 
 ### Demonstração
