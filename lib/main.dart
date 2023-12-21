@@ -1,4 +1,4 @@
-import 'package:carteira_parceira/home_page.dart';
+import 'package:carteira_parceira/views/cp_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,8 +11,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+      title: 'Carteira Parceira',
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: CpPage(),
     );
   }
 }
