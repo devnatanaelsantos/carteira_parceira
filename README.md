@@ -5,14 +5,6 @@ Desenvolvido como parte do Projeto Interdisciplinar (PI) do curso de ADS, o Cart
 
 O aplicativo organiza e exibe de maneira clara as despesas em ordem prioritária definidas pelo usuário. Oferece a opção para o usuário definir uma data futura para uma despesa não essencial, permitindo que ele mantenha o controle prévio de seus gastos. Possibilita que o usuário estabeleça um dia específico para o pagamento de todas as contas, evitando esquecimentos. Além disso, o aplicativo oferece suporte na definição de objetivos e apresenta opções de investimento mais vantajosas que a tradicional poupança, permitindo que o usuário alcance seus objetivos de maneira mais rápida.
 
-## Telas criadas
-
-### Tela de Login
-<img src="https://github.com/devnatanaelsantos/assets/blob/main/login1.png" width=300 height='650'>
-
-### Demonstração
-<img src="https://github.com/devnatanaelsantos/assets/blob/main/login_gif.gif" width=300 height='650'>
-
 ## Status do Projeto
 Atualmente, criei a primeira versão do layout da tela de login. Ainda não está totalmente funcional, pois foi desenvolvida apenas como prática para aplicar o que venho aprendendo sobre desenvolvimento mobile com Flutter. O desenvolvimento do projeto seguirá conforme avançamos no curso.
 
@@ -21,6 +13,12 @@ Atualmente, criei a primeira versão do layout da tela de login. Ainda não est�
 
 ### Gerencimento de estado utilizado:
 - setState
+
+### layout
+<img src="https://github.com/devnatanaelsantos/assets/blob/main/login1.png" width=300 height='650'>
+
+### Demonstração
+<img src="https://github.com/devnatanaelsantos/assets/blob/main/login_gif.gif" width=300 height='650'>
 
 ### Autor
 Natanael dos Santos
