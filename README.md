@@ -15,10 +15,10 @@ Atualmente, criei a primeira versão do layout da tela de login. Ainda não est�
 - setState
 
 ### Layout
-<img src="https://github.com/devnatanaelsantos/assets/blob/main/login1.png" width=300 height='650'>
+<img src="https://github.com/devnatanaelsantos/assets/blob/main/carteira_parceira/login1.png" width=300 height='650'>
 
 ### Demonstração
-<img src="https://github.com/devnatanaelsantos/assets/blob/main/login_gif.gif" width=300 height='650'>
+<img src="https://github.com/devnatanaelsantos/assets/blob/main/carteira_parceira/gif.gif" width=300 height='650'>
 
 ### Autor
 Natanael dos Santos
