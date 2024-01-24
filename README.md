@@ -1,22 +1,18 @@
 # Carteira Parceira
 
 ## Resumo do projeto
-Carteira Parceira é um aplicativo móvel desenvolvido com o objetivo de auxiliar os usuários a controlarem suas despesas de maneira simples e economizar.
+Carteira Parceira é um projeto pessoal desenvolvido com o objetivo de auxiliar os usuários a controlarem suas despesas e a planejarem objetivos de maneira simples e eficiente.
 
-O aplicativo organiza e exibe de maneira clara as despesas em ordem prioritária definidas pelo usuário. Oferece a opção para o usuário definir uma data futura para uma despesa não essencial, permitindo que ele mantenha o controle prévio de seus gastos. Possibilita que o usuário estabeleça um dia específico para o pagamento de todas as contas, evitando esquecimentos. Além disso, o aplicativo oferece suporte na definição de objetivos e apresenta opções de investimento mais vantajosas que a tradicional poupança, permitindo que o usuário alcance seus objetivos de maneira mais rápida.
+O aplicativo contará com recursos para organizar e controlar despesas, definir datas para gastos não essenciais e para o pagamento de despesas, além de auxiliar na definição de objetivos financeiros pessoais."
 
 ## Status do desenvolvimento
-Atualmente, criei a primeira versão do layout da tela de login. Ainda não está totalmente funcional, pois foi desenvolvida apenas como prática para aplicar o que venho aprendendo sobre Flutter. O desenvolvimento do projeto seguirá conforme avançamos no curso.
-
-### Arquitetura adotada:
-- MVC
-
-### Gerencimento de estado utilizado:
-- setState
+Atualmente, criei a primeira versão do layout da tela de login. Ainda não está totalmente funcional, pois foi desenvolvida apenas para praticar o que venho aprendendo sobre desenvolvimento mobile com Flutter.
 
 ### Layout
+- Tela de login
 <img src="https://github.com/devnatanaelsantos/assets/blob/main/carteira_parceira/login1.png" width=300 height='650'>
 
 ### Demonstração
+- Tela de login
 <img src="https://github.com/devnatanaelsantos/assets/blob/main/carteira_parceira/login_gif.gif" width=300 height='650'>
 
