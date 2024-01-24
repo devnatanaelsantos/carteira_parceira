@@ -20,9 +20,3 @@ Atualmente, criei a primeira versão do layout da tela de login. Ainda não est�
 ### Demonstração
 <img src="https://github.com/devnatanaelsantos/assets/blob/main/carteira_parceira/login_gif.gif" width=300 height='650'>
 
-### Autor
-Natanael dos Santos
-
-https://www.linkedin.com/in/devnatanaelsantos/ 
-
-
