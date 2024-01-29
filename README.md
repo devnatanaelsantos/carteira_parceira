@@ -1,7 +1,7 @@
 # Carteira Parceira
 
 ## Resumo do projeto
-Carteira Parceira é um projeto pessoal desenvolvido com o objetivo de auxiliar os usuários a controlarem suas despesas e a planejarem objetivos de maneira simples e eficiente.
+Carteira Parceira é um projeto pessoal desenvolvido com o objetivo de auxiliar os usuários a controlarem suas despesas e a planejarem objetivos de maneira mais simples e eficiente.
 
 O aplicativo contará com recursos para organizar e controlar despesas, definir datas para gastos não essenciais e para o pagamento de contas, além de auxiliar na definição de objetivos financeiros pessoais."
 
