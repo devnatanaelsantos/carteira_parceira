@@ -1,4 +1,4 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:carteira_parceira/controllers/cp_controller.dart';
 import 'package:carteira_parceira/widgets/cp_button.dart';
 import 'package:flutter/material.dart';
 import 'package:carteira_parceira/widgets/cp_colors.dart';
@@ -11,9 +11,7 @@ class CpPage extends StatefulWidget {
 }
 
 class _CpPageState extends State<CpPage> {
-  //Variáveis para configuração o botão de visibilidade de senha
-  bool obscureText = true;
-  IconData? iconPassword = Icons.visibility;
+  CpController cpController = CpController();
 
   @override
   Widget build(BuildContext context) {
@@ -59,48 +57,46 @@ class _CpPageState extends State<CpPage> {
               SizedBox(
                 height: 50,
                 width: double.infinity,
-                child: TextField(
-                  decoration: InputDecoration(
-                    filled: true,
-                    fillColor: Colors.white,
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(24),
-                      borderSide: BorderSide.none,
-                    ),
-                    hintText: "Senha",
-                    hintStyle:
-                        const TextStyle(color: Color(0xFF989898), fontSize: 14),
-                    //configurando botão de visibilidade de senha
-                    suffixIcon: IconButton(
-                      onPressed: () {
-                        if (obscureText == true) {
-                          setState(() {
-                            obscureText = false;
-                            iconPassword = Icons.visibility_off;
-                          });
-                        } else {
-                          setState(() {
-                            obscureText = true;
-                            iconPassword = Icons.visibility;
-                          });
-                        }
-                      },
-                      icon: Icon(iconPassword),
-                      color: AppColors.secundarycolor,
-                    ),
-                  ),
-                  obscureText: obscureText,
-                  textAlign: TextAlign.left,
+                child: ValueListenableBuilder(
+                  valueListenable: cpController.obscureText,
+                  builder: (context, value, __) {
+                    return TextField(
+                      decoration: InputDecoration(
+                        filled: true,
+                        fillColor: Colors.white,
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(24),
+                          borderSide: BorderSide.none,
+                        ),
+                        hintText: "Senha",
+                        hintStyle: const TextStyle(
+                            color: Color(0xFF989898), fontSize: 14),
+                        //configurando botão de visibilidade de senha
+                        suffixIcon: IconButton(
+                          onPressed: () {
+                            cpController.hidePassword();
+                          },
+                          icon: Icon(cpController.iconPassword),
+                          color: AppColors.secundarycolor,
+                        ),
+                      ),
+                      obscureText: cpController.obscureText.value,
+                      textAlign: TextAlign.left,
+                    );
+                  },
                 ),
               ),
-              const SizedBox(height: 24),
-              //button entrar
+              const SizedBox(
+                height: 24,
+              ),
               const CpButton(descricao: 'Entrar'),
-              const SizedBox(height: 8),
-              //button cadastrar-se
+              const SizedBox(
+                height: 8,
+              ),
               const CpButton(descricao: 'Cadastrar-se'),
-              const SizedBox(height: 10),
-              //button esqueceu a senha
+              const SizedBox(
+                height: 10,
+              ),
               SizedBox(
                 width: 150,
                 height: 60,
