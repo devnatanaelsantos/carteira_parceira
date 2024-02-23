@@ -1,28 +1,18 @@
 # Carteira Parceira
+Carteira Parceira é um projeto pessoal de um aplicativo que será desenvolvido em Flutter, com o objetivo de auxiliar os usuários a controlarem suas despesas e a planejarem seus objetivos de maneira simples e eficiente.
 
-## Resumo do projeto
-Desenvolvido como parte do Projeto Interdisciplinar (PI) do curso de ADS, o Carteira Parceira é um aplicativo móvel projeto para auxiliar os usuários a controlarem suas despesas de maneira simples e economizar.
+O aplicativo contará com recursos para organizar e controlar despesas, definir datas para gastos não essenciais e para o pagamento de contas, além de auxiliar na definição de objetivos financeiros pessoais.
 
-O aplicativo organiza e exibe de maneira clara as despesas em ordem prioritária definidas pelo usuário. Oferece a opção para o usuário definir uma data futura para uma despesa não essencial, permitindo que ele mantenha o controle prévio de seus gastos. Possibilita que o usuário estabeleça um dia específico para o pagamento de todas as contas, evitando esquecimentos. Além disso, o aplicativo oferece suporte na definição de objetivos e apresenta opções de investimento mais vantajosas que a tradicional poupança, permitindo que o usuário alcance seus objetivos de maneira mais rápida.
+## Status do Desenvolvimento
+O desenvolvimento do projeto está atualmente em pausa. Desenvolvi a primeira versão do layout da tela de login, esta versão ainda não está completamente funcional, pois foi criada principalmente para praticar o que venho aprendendo sobre desenvolvimento mobile com Flutter.
 
-## Status do Projeto
-Atualmente, criei a primeira versão do layout da tela de login. Ainda não está totalmente funcional, pois foi desenvolvida apenas como prática para aplicar o que venho aprendendo sobre Flutter. O desenvolvimento do projeto seguirá conforme avançamos no curso.
-
-### Arquitetura adotada:
-- MVC
-
-### Gerencimento de estado utilizado:
-- setState
+No momento, estou concentrado em continuar estudando e aprendendo sobre Flutter. Pretendo retomar o desenvolvimento do projeto posteriormente.
 
 ### Layout
-<img src="https://github.com/devnatanaelsantos/assets/blob/main/login1.png" width=300 height='650'>
+- Tela de login
+<img src="https://github.com/devnatanaelsantos/assets/blob/main/carteira_parceira/login1.png" width=300 height='650'>
 
 ### Demonstração
-<img src="https://github.com/devnatanaelsantos/assets/blob/main/login_gif.gif" width=300 height='650'>
-
-### Autor
-Natanael dos Santos
-
-https://www.linkedin.com/in/devnatanaelsantos/ 
-
+- Tela de login
+<img src="https://github.com/devnatanaelsantos/assets/blob/main/carteira_parceira/login_gif.gif" width=300 height='650'>
 
